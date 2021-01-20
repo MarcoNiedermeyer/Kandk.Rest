@@ -34,7 +34,7 @@ namespace Kandk.Rest.Api.Controllers
     public IActionResult Error()
     {
       var context = HttpContext.Features.Get<IExceptionHandlerFeature>();
-      var errorMessage = String.Concat(context.Error.Message, Environment.NewLine, context.Error.StackTrace);
+      var errorMessage = String.Concat(context?.Error.Message, Environment.NewLine, context?.Error.StackTrace);
 
       _logger.LogError(errorMessage);
 
