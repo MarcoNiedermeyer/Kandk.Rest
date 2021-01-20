@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KandK.Rest.Repositories\KandK.Rest.Repositories.csproj" />
+    <ProjectReference Include="..\Kandk.Rest.Shared\Kandk.Rest.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
